@@ -1,0 +1,21 @@
+node_modules/
+zigzag.db
+*.swp
+.env
+dist/
+tsconfig.tsbuildinfo
+.vscode/
+
+# Using yarn, ignore package-lock.json
+package-lock.json
+
+# hardhat
+evm_contracts/artifacts
+evm_contracts/cache
+evm_contracts/build-info
+evm_contracts/node_modules
+yarn-error.log
+
+#remix
+evm_contracts/contracts/artifacts
+evm_contracts/remix-compiler.config.js

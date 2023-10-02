@@ -1,0 +1,25 @@
+{
+  "overrides": [
+    {
+      "files": "*.sol",
+      "options": {
+        "printWidth": 140,
+        "tabWidth": 2,
+        "useTabs": false,
+        "singleQuote": true,
+        "bracketSpacing": true,
+        "explicitTypes": "preserve"
+      }
+    },
+    {
+      "files": "*.ts",
+      "options": {
+        "printWidth": 140,
+        "tabWidth": 2,
+        "useTabs": false,
+        "semi": false,
+        "singleQuote": true
+      }
+    } 
+  ]
+}
