@@ -11,10 +11,6 @@ export const submitorder3: ZZServiceHandler = async (
   let msg: WSMessage
   try {
     switch (chainId) {
-      case 1:
-      case 1002:
-        msg = await api.processorderzksync(chainId, market, zktx)
-        break
       // case 1001:
       //   msg = await api.processorderstarknet(chainId, market, zktx)
       //   break

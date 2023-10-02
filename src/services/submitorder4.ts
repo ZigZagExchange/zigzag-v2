@@ -8,12 +8,12 @@ export const submitorder4: ZZServiceHandler = async (
   ws,
   [chainId, market, zktxArray, oldOrderArray]
 ) => {
-  if (!api.VALID_EVM_CHAINS.includes(chainId)) {
+  if (!api.VALID_CHAINS.includes(chainId)) {
     const errorMsg: WSMessage = {
       op: 'error',
       args: [
         'submitorder4',
-        `${chainId} is not a valid EVM chain id. Use ${api.VALID_EVM_CHAINS}`,
+        `Invalid chainId. Use ${api.VALID_CHAINS}`,
       ],
     }
     console.log(`Error, ${chainId} is not a valid chain id.`)
